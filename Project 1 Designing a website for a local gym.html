@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(/mirror.webp);
+            
+           
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 0px;
+
+        }
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+        .mid{
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 34px;
+            display: inline-block;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a{                                    
+            color: white;
+            text-decoration: none;
+            padding: 14px 14px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+           text-decoration: underline;
+           color: aqua;
+           padding: 14px 14px;
+        }
+      .left  img{
+            width: 50px;
+            margin-top: 12px;
+        }
+        .left p{
+            font-size: medium;
+            color: white;
+        }
+        .left div{
+            text-align: center;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px,14px;
+            border: 2ps solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(71, 71, 71);
+        }
+        .container{
+            /* border: 2px solid white; */
+            margin: 98px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+            color: white;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 4px;
+            border: 2px solid black;
+            margin: 11px auto;
+            border-radius: 8px;
+        }
+        .container button{
+            display: block;
+            width: 400px;   
+            padding: 4px;       
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+       <img src="/dumble.webp" alt="">
+       <p>Fitness</p>
+
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">E-Mail Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+<h1>Join the best gym of Kanpur now</h1>
+<form action="action.php">
+    <div class="formgroup"> 
+         <input type="text" name="" placeholder="Enter your name" id="">
+        </div>
+        <div class="formgroup"> 
+            <input type="text" name="" placeholder="Enter your Age" id="">
+           </div>
+           <div class="formgroup"> 
+            <input type="text" name="" placeholder="Enter your Gender" id="">
+           </div>
+           <div class="formgroup"> 
+            <input type="text" name="" placeholder="Enter your Locality" id="">
+           </div>
+   
+    <button class="btn">Submit</button>
+</form>
+    </div>
+   
+</body>
+</html>
